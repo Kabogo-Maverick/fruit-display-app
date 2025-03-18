@@ -10,6 +10,32 @@
 </head>
 <body>
 
+    <div id="left">
+        
+    </div>
+    <div id="right">
+        <h2>Add Fruit</h2>
+        <form id="fruit-form">
+            <input type="text" id="name" placeholder="Fruit Name" required>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="grams" placeholder="Grams" required>
+            <input type="number" id="price" placeholder="Price per Gram" required>
+            <input type="number" id="rating" placeholder="Rating (1-5)" required>
+            <input type="text" id="comments" placeholder="Comments" required>
+            <input type="text" id="image-url" placeholder="Image URL" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <button id="change-color">Change Background Color</button>
+        
+        <div id="selected">
+            <h2>Selected Fruit</h2>
+            <img id="selected-img" src="https://via.placeholder.com/150" alt="Select a fruit">
+            <p id="selected-desc">No fruit selected</p>
+        </div>
+    </div>
+
+
 
     <script src='./script.js'></script>
 </body>
