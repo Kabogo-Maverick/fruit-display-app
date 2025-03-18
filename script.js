@@ -58,3 +58,8 @@ function updateFruitDisplay() {
         leftContainer.appendChild(img);
     });
 }
+
+function selectFruit(fruit) {
+    selectedImg.src = fruit.imageUrl;
+    selectedDesc.innerHTML = `<strong>${fruit.name}</strong><br>${fruit.description}<br>Grams: ${fruit.grams}g<br>Price: $${fruit.price}/g<br>Rating: ${fruit.rating}<br>Comments: ${fruit.comments}`;
+}
