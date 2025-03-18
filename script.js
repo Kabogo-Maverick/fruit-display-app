@@ -63,3 +63,19 @@ function selectFruit(fruit) {
     selectedImg.src = fruit.imageUrl;
     selectedDesc.innerHTML = `<strong>${fruit.name}</strong><br>${fruit.description}<br>Grams: ${fruit.grams}g<br>Price: $${fruit.price}/g<br>Rating: ${fruit.rating}<br>Comments: ${fruit.comments}`;
 }
+fruitForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("name").value;
+    const description = document.getElementById("description").value;
+    const grams = document.getElementById("grams").value;
+    const price = document.getElementById("price").value;
+    const rating = document.getElementById("rating").value;
+    const comments = document.getElementById("comments").value;
+    const imageUrl = document.getElementById("image-url").value;
+
+    const fruit = { name, description, grams, price, rating, comments, imageUrl };
+    fruits.push(fruit);
+    updateFruitDisplay();
+    fruitForm.reset();
+});
+
