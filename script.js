@@ -47,3 +47,14 @@ const changeColorBtn = document.getElementById("change-color");
 
 const colors = ["#FF0000", "#FF4500", "#FF8C00", "#FFD700", "#ADFF2F", "#32CD32", "#00FA9A", "#00CED1", "#1E90FF", "#4169E1", "#8A2BE2", "#9400D3", "#FF1493", "#FF69B4", "#FFB6C1", "#FFDAB9"];
 
+
+function updateFruitDisplay() {
+    leftContainer.innerHTML = "";
+    fruits.forEach(fruit => {
+        const img = document.createElement("img");
+        img.src = fruit.imageUrl;
+        img.alt = fruit.name;
+        img.addEventListener("click", () => selectFruit(fruit));
+        leftContainer.appendChild(img);
+    });
+}
