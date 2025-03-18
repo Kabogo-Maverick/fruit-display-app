@@ -79,3 +79,11 @@ fruitForm.addEventListener("submit", function (e) {
     fruitForm.reset();
 });
 
+
+changeColorBtn.addEventListener("click", function () {
+    document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+});
+
+updateFruitDisplay();
+
+
