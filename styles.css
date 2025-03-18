@@ -27,3 +27,35 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+#selected {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+#selected img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 250px;
+}
+input, button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    cursor: pointer;
+}
+#change-color {
+    background-color: teal;
+    color: white;
+    margin-top: 10px;
+}
